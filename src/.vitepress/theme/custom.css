@@ -1,0 +1,27 @@
+/*
+Custom CSS
+
+This file lays out what things you can override
+https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+
+It will also exist in this local folder after installing dependencies
+node_modules\vitepress\dist\client\theme-default\styles 
+
+Overriding the four "brand" variables seems to be the fastest way for a general
+colour change.
+
+Can also override vars within the .light and .dark classes for more flexibility
+
+*/
+:root {
+    --vp-c-brand-1: var(--vp-c-green-1);
+    --vp-c-brand-2: var(--vp-c-green-2);
+    --vp-c-brand-3: var(--vp-c-green-3);
+    --vp-c-brand-soft: var(--vp-c-green-soft);
+}
+
+/* stops hyperlinks from having underlines */
+
+.vp-doc a {
+    text-decoration: none;
+}
